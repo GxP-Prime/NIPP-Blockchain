@@ -1,0 +1,86 @@
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "MANUFACTURED_ITEM",
+  "partNo": "CTSCAN0025",
+  "partName": "CT-Scan",
+  "childPart": ["GNTRY005", "CMP231", "CON2293"]
+}
+
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "MANUFACTURED_ITEM",
+  "partNo": "GNTRY005",
+  "partName": "Main Gantry",
+  "childPart": ["XRAY94", "PST3672", "CSEN745"],
+  "parentPart": "resource:org.company.healthcare.Part#CTSCAN0025"
+}
+
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "PROCURED_ITEM",
+  "partNo": "CMP231",
+  "partName": "CT-Computer",
+  "childPart": [],
+  "parentPart": "resource:org.company.healthcare.Part#CTSCAN0025"
+}
+
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "PROCURED_ITEM",
+  "partNo": "CON2293",
+  "partName": "Operating Console",
+  "childPart": [],
+  "parentPart": "resource:org.company.healthcare.Part#CTSCAN0025"
+}
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "PROCURED_ITEM",
+  "partNo": "CSEN745",
+  "partName": "Casing Enclosure",
+  "childPart": [],
+  "parentPart": "resource:org.company.healthcare.Part#GNTRY005"
+}
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "PROCURED_ITEM",
+  "partNo": "PST3672",
+  "partName": "Patient Support",
+  "childPart": [],
+  "parentPart": "resource:org.company.healthcare.Part#GNTRY005"
+}
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "MANUFACTURED_ITEM",
+  "partNo": "XRAY94",
+  "partName": "X-Ray Tube X5",
+  "childPart": ["AND96778", "CATH7895"],
+  "parentPart": "resource:org.company.healthcare.Part#GNTRY005"
+}
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "PROCURED_ITEM",
+  "partNo": "AND96778",
+  "partName": "Anode Filament",
+  "childPart": [],
+  "parentPart": "resource:org.company.healthcare.Part#XRAY94"
+}
+{
+  "$class": "org.company.healthcare.Part",
+  "type": "PROCURED_ITEM",
+  "partNo": "CATH7895",
+  "partName": "Cathode Filament",
+  "childPart": [],
+  "parentPart": "resource:org.company.healthcare.Part#XRAY94"
+}
+
+
+
+
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_ASSEMBLED",
+  "part": "CTSCAN0025"
+}
