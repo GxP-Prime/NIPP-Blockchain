@@ -29,7 +29,6 @@ async function recurChild(parent_assembly, no) {
     const NS = 'org.company.healthcare';
 
     for(let i in part.childPart){
-        console.log(i)
         // create the Child
         let as_id = no + 1
         no++

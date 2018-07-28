@@ -84,3 +84,55 @@
   "status": "TO_BE_ASSEMBLED",
   "part": "CTSCAN0025"
 }
+
+
+{
+  "$class": "org.company.healthcare.Procuring",
+  "comment": "",
+  "procuredAssembly": "resource:org.company.healthcare.Assembly#CT20180371CMP2312",
+  "procurementAdmin": "resource:org.company.healthcare.Admin#1076"
+}
+{
+  "$class": "org.company.healthcare.Procuring",
+  "comment": "",
+  "procuredAssembly": "resource:org.company.healthcare.Assembly#CT20180371CON22933",
+  "procurementAdmin": "resource:org.company.healthcare.Admin#1076"
+}
+
+{
+  "$class": "org.company.healthcare.QualityCheck",
+  "qualityCheckAssembly": "resource:org.company.healthcare.Assembly#CT20180371CMP2312",
+  "qualityAdmin": "resource:org.company.healthcare.Admin#6608"
+}
+{
+  "$class": "org.company.healthcare.QualityCheck",
+  "qualityCheckAssembly": "resource:org.company.healthcare.Assembly#CT20180371CON22933",
+  "qualityAdmin": "resource:org.company.healthcare.Admin#6608"
+}
+{
+  "$class": "org.company.healthcare.QualityCheck",
+  "qualityCheckAssembly": "resource:org.company.healthcare.Assembly#CT20180371GNTRY0051",
+  "qualityAdmin": "resource:org.company.healthcare.Admin#7625"
+}
+
+{
+  "$class": "org.company.healthcare.Manufacturing",
+  
+  "toManufactureAssembly": "resource:org.company.healthcare.Assembly#CT20180371GNTRY0051",
+  "manufacturingAdmin": "resource:org.company.healthcare.Admin#9003"
+}
+
+
+
+{
+  "$class": "org.company.healthcare.Assembling",
+ 
+  "toAssembleAssembly": "resource:org.company.healthcare.Assembly#CT20180371",
+  "assemblingAdmin": "resource:org.company.healthcare.Admin#5407"
+}
+
+{
+  "$class": "org.company.healthcare.QualityCheck",
+  "qualityCheckAssembly": "resource:org.company.healthcare.Assembly#CT20180371",
+  "qualityAdmin": "resource:org.company.healthcare.Admin#7625"
+}
