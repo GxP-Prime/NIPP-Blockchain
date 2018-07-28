@@ -1,0 +1,102 @@
+namespace org.acme.loyalty.reward
+
+
+/* Enums */
+
+
+enum Status{
+    o Active
+    o Expired
+}
+
+enum Gender{
+    o Male
+    o Female
+    o Other
+}
+
+/* Transactions */ 
+
+abstract transaction RewardTransaction{
+    --> Reward reward 
+}
+
+transaction Rewarding extends RewardTransaction{ 
+}
+
+transaction Expiration  extends RewardTransaction{ 
+}
+
+transaction Redemption{
+    --> Redeem redeem
+}
+
+transaction SetupDemo{
+}
+
+
+/* Assets */
+
+asset Reward identified by rewardID {
+    o String rewardID
+    o DateTime issuedOn
+    o DateTime expiryDate
+    o String TC
+    o String msg
+    o Double value
+    o Double originalValue
+    o Status status
+    --> Receiver receiver
+    --> Company issuer
+}
+
+asset Redeem identified by redeemID{
+  o String redeemID
+  o Double value
+  o DateTime receivedOn
+  o RewardsUsed[] reward
+  --> Receiver requestor
+  --> Company redeemer
+  --> Contract contract
+}
+
+
+asset Contract identified by contractID{
+  o String contractID
+  o Double limit
+  --> Receiver requestor
+  --> Company redeemer
+}
+
+/* Concept */
+
+concept RewardsUsed {
+  --> Reward reward
+  o Double value
+}
+
+concept Address {
+  o String city optional
+  o String country
+  o String street optional
+  o String zip optional
+}
+
+
+/* Participants */
+
+abstract participant Business identified by email {
+  o String name
+  o String email
+  o Address address
+  o Double accountBalance
+}
+
+participant Company extends Business{
+}
+
+participant Receiver extends Business{
+  o Gender gender
+  o String phone
+  o DateTime dob
+}
