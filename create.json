@@ -79,11 +79,92 @@
 
 {
   "$class": "org.company.healthcare.Assembly",
-  "uid": "CT20180364",
+  "uid": "CT20180391",
   "assemblyQuality": "Pending",
   "status": "TO_BE_ASSEMBLED",
   "part": "CTSCAN0025"
 }
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364CMP2312",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PROCURED",
+  "parentAssembly":"CT20180364",
+  "part": "CMP231"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364CON22933",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PROCURED",
+  "parentAssembly":"CT20180364",
+  "part": "CON2293"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180390",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_ASSEMBLED",
+  "part": "CTSCAN0025"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051XRAY941",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_MANUFACTURED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051",
+  "part": "resource:org.company.healthcare.Part#XRAY94"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051PST36722",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PURCHASED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051",
+  "part": "resource:org.company.healthcare.Part#PST3672"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051CSEN7453",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PURCHASED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051",
+  "part": "resource:org.company.healthcare.Part#CSEN745"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051XRAY941AND967781",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PURCHASED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051XRAY941",
+  "part": "resource:org.company.healthcare.Part#AND96778"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051XRAY941CATH78952",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PURCHASED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051XRAY941",
+  "part": "resource:org.company.healthcare.Part#CATH78952"
+}
+
+
+
+
+
 
 
 {
