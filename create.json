@@ -79,8 +79,141 @@
 
 {
   "$class": "org.company.healthcare.Assembly",
-  "uid": "CT20180364",
+  "uid": "CT20180391",
   "assemblyQuality": "Pending",
   "status": "TO_BE_ASSEMBLED",
   "part": "CTSCAN0025"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364CMP2312",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PROCURED",
+  "parentAssembly":"CT20180364",
+  "part": "CMP231"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364CON22933",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PROCURED",
+  "parentAssembly":"CT20180364",
+  "part": "CON2293"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180390",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_ASSEMBLED",
+  "part": "CTSCAN0025"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051XRAY941",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_MANUFACTURED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051",
+  "part": "resource:org.company.healthcare.Part#XRAY94"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051PST36722",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PURCHASED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051",
+  "part": "resource:org.company.healthcare.Part#PST3672"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051CSEN7453",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PURCHASED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051",
+  "part": "resource:org.company.healthcare.Part#CSEN745"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051XRAY941AND967781",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PURCHASED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051XRAY941",
+  "part": "resource:org.company.healthcare.Part#AND96778"
+}
+
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180364GNTRY0051XRAY941CATH78952",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_PURCHASED",
+  "childAssembly": [],
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180364GNTRY0051XRAY941",
+  "part": "resource:org.company.healthcare.Part#CATH78952"
+}
+
+
+
+
+
+
+
+{
+  "$class": "org.company.healthcare.Procuring",
+  "comment": "",
+  "procuredAssembly": "resource:org.company.healthcare.Assembly#CT20180371CMP2312",
+  "procurementAdmin": "resource:org.company.healthcare.Admin#1076"
+}
+{
+  "$class": "org.company.healthcare.Procuring",
+  "comment": "",
+  "procuredAssembly": "resource:org.company.healthcare.Assembly#CT20180371CON22933",
+  "procurementAdmin": "resource:org.company.healthcare.Admin#1076"
+}
+
+{
+  "$class": "org.company.healthcare.QualityCheck",
+  "qualityCheckAssembly": "resource:org.company.healthcare.Assembly#CT20180371CMP2312",
+  "qualityAdmin": "resource:org.company.healthcare.Admin#6608"
+}
+{
+  "$class": "org.company.healthcare.QualityCheck",
+  "qualityCheckAssembly": "resource:org.company.healthcare.Assembly#CT20180371CON22933",
+  "qualityAdmin": "resource:org.company.healthcare.Admin#6608"
+}
+{
+  "$class": "org.company.healthcare.QualityCheck",
+  "qualityCheckAssembly": "resource:org.company.healthcare.Assembly#CT20180371GNTRY0051",
+  "qualityAdmin": "resource:org.company.healthcare.Admin#7625"
+}
+
+{
+  "$class": "org.company.healthcare.Manufacturing",
+  
+  "toManufactureAssembly": "resource:org.company.healthcare.Assembly#CT20180371GNTRY0051",
+  "manufacturingAdmin": "resource:org.company.healthcare.Admin#9003"
+}
+
+
+
+{
+  "$class": "org.company.healthcare.Assembling",
+ 
+  "toAssembleAssembly": "resource:org.company.healthcare.Assembly#CT20180371",
+  "assemblingAdmin": "resource:org.company.healthcare.Admin#5407"
+}
+
+{
+  "$class": "org.company.healthcare.QualityCheck",
+  "qualityCheckAssembly": "resource:org.company.healthcare.Assembly#CT20180371",
+  "qualityAdmin": "resource:org.company.healthcare.Admin#7625"
 }

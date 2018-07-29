@@ -1,0 +1,14 @@
+{
+  "$class": "org.company.healthcare.Assembly",
+  "uid": "CT20180390",
+  "assemblyQuality": "Pending",
+  "status": "TO_BE_ASSEMBLED",
+  "part": "CTSCAN0025"
+}
+
+
+{
+  "$class": "org.company.healthcare.GenerateBOM",
+  "parentAssembly": "resource:org.company.healthcare.Assembly#CT20180390"
+}
+
